@@ -2,8 +2,9 @@ Binaries
 DerivedDataCache
 Intermediate
 Saved
+/Build/
 /Windows/
-AssetsData
+/AssetsData/
 .vscode
 .vs
 *.VC.db
