@@ -8,8 +8,8 @@ public class Black_ShadowEditorTarget : TargetRules
 	public Black_ShadowEditorTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Editor;
-		DefaultBuildSettings = BuildSettingsVersion.V2;
-
-		ExtraModuleNames.AddRange( new string[] { "Black_Shadow" } );
+		DefaultBuildSettings = BuildSettingsVersion.V5;
+        IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
+        ExtraModuleNames.AddRange( new string[] { "Black_Shadow" } );
 	}
 }
