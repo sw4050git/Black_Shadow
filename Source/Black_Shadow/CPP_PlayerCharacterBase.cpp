@@ -6,19 +6,16 @@
 // Sets default values
 ACPP_PlayerCharacterBase::ACPP_PlayerCharacterBase()
 {
- 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
 	CPP_PlayerCharacterAttributeSet = CreateDefaultSubobject<UCPP_PlayerCharacterAttributeSet>(TEXT("AttributeSet"));
 	AbilitySystem = CreateDefaultSubobject<UAbilitySystemComponent>(TEXT("AbilitySystem"));
-
 }
 
 // Called when the game starts or when spawned
 void ACPP_PlayerCharacterBase::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	SetWalkSpeed(CPP_PlayerCharacterAttributeSet->GetSpeed());
 }
 
 // Called every frame
