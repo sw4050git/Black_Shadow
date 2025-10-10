@@ -18,14 +18,14 @@ class BLACK_SHADOW_API UCPP_MemoManagerSubsystem : public UWorldSubsystem
 {
 	GENERATED_BODY()
 
+	void SortMemos();
+
 public:
 	UPROPERTY(BlueprintReadOnly, EditAnywhere)
 	TArray<UCPP_MemoDataAsset*> Memos;
 
 	UFUNCTION(BlueprintCallable, Category = "MemoManager")
 	void AddMemoData(UCPP_MemoDataAsset* Memo);
-
-	void SortMemos();
 
 	UPROPERTY(BlueprintAssignable, Category = "MemoManager")
 	FED_UpdateMemos ED_UpdateMomos;
