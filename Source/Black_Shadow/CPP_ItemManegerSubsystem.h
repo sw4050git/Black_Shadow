@@ -19,6 +19,8 @@ class BLACK_SHADOW_API UCPP_ItemManegerSubsystem : public UWorldSubsystem
 {
 	GENERATED_BODY()
 
+	void SortItems();
+
 public:
 	UPROPERTY(BlueprintReadOnly, EditAnywhere)
 	TArray<FST_ItemData> Items;
@@ -37,8 +39,6 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "ItemDataManager")
 	void SelectItem(bool IsRight);
-
-	void SortItems();
 
 	UPROPERTY(BlueprintAssignable, Category = "ItemDataBase")
 	FED_UpdateItem ED_UpdateItem;
