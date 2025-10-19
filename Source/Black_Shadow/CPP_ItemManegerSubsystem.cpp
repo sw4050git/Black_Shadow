@@ -60,5 +60,10 @@ void UCPP_ItemManegerSubsystem::SortItems()
 			SelectedItemIndex %= Items.Num();
 			SelectedItemData = Items[SelectedItemIndex].ItemData;
 		}
+		else 
+		{
+			SelectedItemIndex = 0;
+			SelectedItemData = nullptr;
+		}
 	} 
 }
