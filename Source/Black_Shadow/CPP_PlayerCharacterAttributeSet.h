@@ -43,6 +43,10 @@ public:
 	ATTRIBUTE_ACCESSORS(UCPP_PlayerCharacterAttributeSet, HeartRateIncrement)
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerCharacterAttributes");
+	FGameplayAttributeData HeartRateDecrement;
+	ATTRIBUTE_ACCESSORS(UCPP_PlayerCharacterAttributeSet, HeartRateDecrement)
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerCharacterAttributes");
 	FGameplayAttributeData Loudness;
 	ATTRIBUTE_ACCESSORS(UCPP_PlayerCharacterAttributeSet, Loudness);
 	

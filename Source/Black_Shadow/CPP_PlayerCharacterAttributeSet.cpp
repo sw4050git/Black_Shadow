@@ -12,6 +12,7 @@ UCPP_PlayerCharacterAttributeSet::UCPP_PlayerCharacterAttributeSet()
 	Speed = 250.f;
 	HeartRate = 0.f;
 	HeartRateIncrement = 0.0001f;
+	HeartRateDecrement = 0.0001f;
 	Loudness = 10.f;
 }
 
