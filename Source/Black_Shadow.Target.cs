@@ -8,8 +8,10 @@ public class Black_ShadowTarget : TargetRules
 	public Black_ShadowTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Game;
-		DefaultBuildSettings = BuildSettingsVersion.V2;
+       
+        DefaultBuildSettings = BuildSettingsVersion.Latest;
+        IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
 
-		ExtraModuleNames.AddRange( new string[] { "Black_Shadow" } );
+        ExtraModuleNames.AddRange( new string[] { "Black_Shadow" } );
 	}
 }
